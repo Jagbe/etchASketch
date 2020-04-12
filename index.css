@@ -1,0 +1,115 @@
+html {
+
+    font-size: 10px;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(162, 163, 157);
+
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+        "header"
+        "sketchGrid"
+        ;
+
+    
+
+
+
+    
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "message button";
+
+    background-color: cadetblue;
+    font-size: 2rem;
+}
+
+.message {
+    display: grid;
+    grid-area: message;
+    justify-items: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    background-color: darkorange;
+}
+
+.buttonDiv {
+    display: grid;
+    grid-area: button;
+
+    height: 100%;
+    width: 100%;
+    background-color: deeppink;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.dataButton {
+    border: .1rem solid rgb(212, 205, 205);
+    border-radius: 20rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    color: rgb(83, 82, 82);
+    background: white;
+    text-shadow: 0 0 .1rem black;
+}
+
+.dataButton:hover {
+    transform: scale(1.1);
+    border-color: black;
+    box-shadow: 0 0 1rem black;
+}
+
+.sketchGrid {
+    display: grid;
+    grid-area: sketchGrid;
+
+    background-color: cyan;
+    transition: all .07s ease;
+}
+
+.dataEntry {
+    height: 2rem;
+    width: 3rem;
+    resize: none;
+    border-radius: 3rem;
+    padding-left: 1rem;
+    padding-top: 0.65rem;
+
+   
+
+}
+
+.block{
+    border-width: 25%;
+    opacity: 0;
+}
+
+
+
